@@ -25,7 +25,7 @@
 
 <style  lang="scss">
 	@import './style/common';
-	.router-fade-enter-active.  .render-fade-leave-active{
+	.router-fade-enter-active,  .render-fade-leave-active{
 		transition: opacity .3s;
 	}
 	.router-fade-enter, .router-fade-leave-active{

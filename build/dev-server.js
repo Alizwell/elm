@@ -43,7 +43,7 @@ switch(process.env.NODE_ENV){
 }
 var options = {
     target: proxypath,
-    changeOrigin: true,
+    changeOrigin: true
 }
 if (context.length) {
     server.use(proxyMiddleware(context, options))
