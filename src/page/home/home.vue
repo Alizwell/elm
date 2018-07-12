@@ -1,10 +1,23 @@
 <template>
 	<div>
-		hello  world
+		<head-top  signin-up='home'>
+			<span  slot='logo'  class="head_logo"  @click="reload">ele.me</span>
+		</head-top>
 	</div>
 </template>
 <script>
-	export	 default {}
+import  headTop  from '../../components/header/head'
+export  default {
+	components:{
+		headTop
+	},
+	methods:{
+		reload(){
+			window.location.reload();
+		}
+	}
+}
+
 </script>
 <style>
 	
