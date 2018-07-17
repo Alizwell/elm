@@ -1,5 +1,5 @@
 import fetch from '../config/fetch'
-
+import {getStore}  from '../config/mUtils'
 
 /**
  * 获取首页默认地址
@@ -26,3 +26,10 @@ export const hotcity = () => fetch('/v1/cities', {
 export const groupcity = () => fetch('/v1/cities', {
 	type: 'group'
 });
+
+
+/**	
+ * 获取用户信息
+ */
+
+ export  const  getUser = ()=>fetch('/v1/user',{user_ud:getStore('user_id')});
