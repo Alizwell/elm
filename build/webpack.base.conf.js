@@ -18,7 +18,8 @@ module.exports = {
     output: {
         path: config.build.assetsRoot,
         publicPath: process.env.NODE_ENV === 'production' ? config.build.assetsPublicPath : config.dev.assetsPublicPath,
-        filename: '[name].js'
+        filename: '[name].js',
+        devtoolModuleFilenameTemplate: '../[resource-path]'
     },
     resolve: {
         extensions: ['', '.js', '.vue', '.less', '.css', '.scss'],
