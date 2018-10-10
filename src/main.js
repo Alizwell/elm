@@ -3,9 +3,11 @@ import VueRouter from 'vue-router'
 import routes from './router/router'
 import store from './store/'
 import {routerMode} from './config/env'
-import './config/rem'
+import './config/rem'   //引入脚本动态设置根的font-size
 import FastClick from 'fastclick'
 
+
+//此处是fastclick的固定用法
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);
